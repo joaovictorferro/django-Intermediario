@@ -12,6 +12,7 @@ class Base(models.Model):
 
     class Meta:
         abstract = True
+
 class Produto(Base):
     nome = models.CharField('Nome', max_length=100)
     preco = models.DecimalField('Preco', max_digits=8, decimal_places=2)
